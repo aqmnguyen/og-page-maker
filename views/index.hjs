@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<meta property="og:url"                content="https://www.movableink.com" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="{{title}}" />
+  <meta property="og:description"        content="{{description}}" />
+  <meta property="og:image"              content="{{imageUrl}}" />
+</head>
+<body>
+	<img src="{{imageUrl}}" />
+</body>
+</html>
