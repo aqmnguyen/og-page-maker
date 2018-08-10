@@ -4,20 +4,23 @@
 	<title>{{title}}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	{{#url}}
-	<meta property="og:url"                content="{{url}}" />
+	<meta property="og:url" content="{{url}}" />
 	{{/url}}
-  <meta property="og:type"               content="website" />
-  {{#title}}
-  <meta property="og:title"              content="{{title}}" />
-  {{/title}}
-  {{#description}}
-  <meta property="og:description"        content="{{description}}" />
-  {{/description}}
-  {{#imageUrl}}
-  <meta property="og:image"              content="{{imageUrl}}" />
-  {{/imageUrl}}
+	<meta property="og:type" content="website" />
+	{{#title}}
+	<meta property="og:title" content="{{title}}" />
+	{{/title}}
+	{{#description}}
+	<meta property="og:description" content="{{description}}" />
+	{{/description}}
+	{{#imageUrl}}
+	<meta property="og:image" content="{{imageUrl}}" />
+	{{/imageUrl}}
+	<link rel='stylesheet' href='/stylesheets/style.css' media="screen"/>
 </head>
 <body>
-	<img src="{{imageUrl}}" style="height:auto; width:100%; max-width:450px;" />
+	<div id="container">
+		<img src="{{imageUrl}}" style="height:auto; width:100%; max-width:450px;" />
+	</div>
 </body>
 </html>
