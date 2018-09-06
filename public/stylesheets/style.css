@@ -3,5 +3,10 @@ body {
 }
 
 #container{
-	text-align: center;
+
+}
+
+#container img{
+	width : 414px;
+	height: 622px;
 }

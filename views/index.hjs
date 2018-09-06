@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>{{title}}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{{#url}}
-	<meta property="og:url" content="{{url}}" />
-	{{/url}}
 	<meta property="og:type" content="website" />
-	{{#title}}
-	<meta property="og:title" content="{{title}}" />
-	{{/title}}
-	{{#description}}
-	<meta property="og:description" content="{{description}}" />
-	{{/description}}
-	{{#imageUrl}}
-	<meta property="og:image" content="{{imageUrl}}" />
-	{{/imageUrl}}
-	<link rel='stylesheet' href='/stylesheets/style.css' media="screen"/>
+
+  {{#t}}
+	  <meta property="og:title" content="{{t}}" />
+	  <meta name="twitter:title" content="{{t}}"/>
+	{{/t}}
+
+  {{#d}}
+	  <meta property="og:description" content="{{d}}" />
+	  <meta name="twitter:description" content="{{d}}" />
+	{{/d}}
+
+  {{#i}}
+	  <meta property="og:image" content="https://ar-share.micpn.com/uploaded/{{i}}.jpg" />
+	  <meta name="twitter:image" content="https://ar-share.micpn.com/uploaded/{{i}}.jpg" />
+	  <meta property="og:image:width" content="414" />
+	  <meta property="og:image:height" content="622" />
+	{{/i}}
+
+	<link rel="stylesheet" href='/stylesheets/style.css' media="screen"/>
 </head>
+
 <body>
 	<div id="container">
-		<img src="{{imageUrl}}" style="height:auto; width:100%; max-width:450px;" />
+    {{#url}}
+    <a href="{{url}}">
+    {{/url}}
+		  <img src="https://ar-share.micpn.com/uploaded/{{i}}.jpg" />
+    {{#url}}
+    </a>
+    {{/url}}
 	</div>
 </body>
 </html>
