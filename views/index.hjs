@@ -17,6 +17,7 @@
 	{{/d}}
 
   {{#i}}
+  	<meta name="twitter:card" content="summary">
 	  <meta property="og:image" content="https://ar-share.micpn.com/uploaded/{{i}}.jpg" />
 	  <meta name="twitter:image" content="https://ar-share.micpn.com/uploaded/{{i}}.jpg" />
 	  <meta property="og:image:width" content="414" />
